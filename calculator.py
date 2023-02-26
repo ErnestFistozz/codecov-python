@@ -18,22 +18,14 @@ class Calculator:
         return self._x + self._y
 
     def modulus(self):
-        try:
-            if self._y == 0:
-                raise ZeroDivisionError
-        except ZeroDivisionError:
-            pass
-        else:
-            return self._x % self._y
+        if self._y == 0:
+            raise ZeroDivisionError
+        return self._x % self._y
     
     def subtract(self):
         return self._x - self._y
     
     def divide(self):
-        try:
-            if self._y == 0:
-                raise ZeroDivisionError
-        except ZeroDivisionError:
-            pass
-        else:
-            return self._x / self._y
+        if self._y == 0:
+            raise ZeroDivisionError
+        return self._x / self._y
