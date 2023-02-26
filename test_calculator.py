@@ -9,6 +9,18 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(cal.x, 1)
         self.assertEqual(cal.y, 2)
 
+    def test_addition(self):
+        cal = Calculator(5, 2)
+        self.assertEqual(cal.add(), 7)
+
+    def test_subtraction(self):
+        cal = Calculator(8, 3)
+        self.assertEqual(cal.subtract, 5)
+
+
+    def test_multiplication(self):
+        cal = Calculator(-2, 3)
+        self.assertEqual(cal.subtract, -6)
 
 if __name__ == '__main__':
     unittest.main()
