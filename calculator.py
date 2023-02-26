@@ -33,7 +33,7 @@ class Calculator:
         try:
             if self._y == 0:
                 raise ZeroDivisionError
-        except ZeroDivisionError as err:
-            print('Cannot divide by zero')
+        except ZeroDivisionError:
+            pass
         else:
             return self._x / self._y
