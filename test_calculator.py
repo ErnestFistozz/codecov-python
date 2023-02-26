@@ -15,12 +15,12 @@ class TestCalculator(unittest.TestCase):
 
     def test_subtraction(self):
         cal = Calculator(8, 3)
-        self.assertEqual(cal.subtract, 5)
+        self.assertEqual(cal.subtract(), 5)
 
 
     def test_multiplication(self):
         cal = Calculator(-2, 3)
-        self.assertEqual(cal.subtract, -6)
+        self.assertEqual(cal.multiply(), -6)
 
 if __name__ == '__main__':
     unittest.main()
