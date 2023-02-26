@@ -36,7 +36,7 @@ class TestCalculator(unittest.TestCase):
             cal.divide()
     
     def test_division(self):
-        cal = Calculator(3, 3)
+        cal = Calculator(9, 3)
         self.assertEqual(cal.divide(), 3.0)
 
 if __name__ == '__main__':
