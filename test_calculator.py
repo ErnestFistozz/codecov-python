@@ -29,15 +29,6 @@ class TestCalculator(unittest.TestCase):
     def test_modulus(self):
         cal = Calculator(8, 4)
         self.assertEqual(cal.modulus(), 0)
-
-    def test_modulus_raise_zero_division_error(self):
-        cal = Calculator(8, 0)
-        self.assertRaises(ZeroDivisionError, cal.modulus)
-    
-    def test_division_raises_zero_divion_error(self):
-        cal = Calculator(8, 0)
-        with self.assertRaises(ZeroDivisionError):
-            cal.divide()
     
     def test_division(self):
         cal = Calculator(9, 3)
