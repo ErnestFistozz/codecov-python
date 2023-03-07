@@ -21,7 +21,11 @@ class TestCalculator(unittest.TestCase):
     def test_multiplication(self):
         cal = Calculator(-2, 3)
         self.assertEqual(cal.multiply(), -6)
-    
+        
+    def test_negative_multiplication(self):
+        cal = Calculator(-2, -3)
+        self.assertEqual(cal.multiply(), -6)
+        
     def test_modulus(self):
         cal = Calculator(8, 4)
         self.assertEqual(cal.modulus(), 0)
