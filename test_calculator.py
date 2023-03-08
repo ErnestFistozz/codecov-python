@@ -28,6 +28,10 @@ class TestCalculator(unittest.TestCase):
     def test_division(self):
         cal = Calculator(9, 3)
         self.assertEqual(cal.divide(), 3.0)
+        
+    def test_modulus_raise_zero_division_error(self):
+        cal = Calculator(8, 0)
+        self.assertRaises(ZeroDivisionError, cal.modulus)
 
 if __name__ == '__main__':
     unittest.main()
