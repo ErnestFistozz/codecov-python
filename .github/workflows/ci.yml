@@ -19,3 +19,6 @@ jobs:
         coverage run -m unittest
     - name: Upload Coverage to Codecov
       uses: codecov/codecov-action@v3
+
+    - name: Upload Coverage to Coveralls
+      uses: coverallsapp/github-action@v2
